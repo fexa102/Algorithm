@@ -1,14 +1,18 @@
 import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-import javax.naming.ldap.StartTlsRequest;
+
+
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		String str = sc.next();
+		String str = br.readLine();
 		char ch;
 		
 		for (int i = 0; i < str.length(); i++) {
