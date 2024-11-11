@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Main {
 
@@ -7,11 +8,10 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		String str = sc.nextLine();
-		String new_str = str.trim();
+		StringTokenizer st = new StringTokenizer(str);
 		
-		if(new_str.isEmpty()) System.out.println('0');
-		else {
-			System.out.println(new_str.split(" ").length);
-		}
+		System.out.println(st.countTokens());
+		
+		
 	}
 }
